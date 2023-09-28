@@ -51,11 +51,14 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ),
                  // Для неавторизованного пользователя
-              Center(
-                  child: Icon(
-                Icons.arrow_forward_ios,
-                size: 10,
-              )),
+              
+               Align(
+      alignment: Alignment.bottomLeft, // Выравнивание по левому нижнему углу
+      child: Icon(
+        Icons.arrow_forward_ios,
+        size: 13,
+      ),
+    ),
             ]
           ),
         ),
