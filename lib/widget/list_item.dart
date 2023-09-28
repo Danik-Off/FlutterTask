@@ -11,7 +11,7 @@ class ListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top:16.0),
-      padding: EdgeInsets.only(top:18,left:16,right:16,bottom: 18),
+      
       width: 312,
       height: 116,
       clipBehavior: Clip.antiAlias,
@@ -26,7 +26,7 @@ class ListItem extends StatelessWidget {
           Expanded(
             flex: 2,
             child: Container(
-             
+             padding: EdgeInsets.all(16),
               height: 300,
               child: Center(
                 child: Text(
