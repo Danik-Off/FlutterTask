@@ -21,6 +21,7 @@ class MainPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
+      
               'Витрина направлений',
               style: TextStyle(
                 color: Color(0xFF272727),
@@ -28,6 +29,7 @@ class MainPage extends StatelessWidget {
                 fontFamily: 'Inter',
                 fontWeight: FontWeight.w600,
                 height: 0.05,
+                
               
               ),
             ),

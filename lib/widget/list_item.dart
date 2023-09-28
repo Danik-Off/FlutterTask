@@ -23,13 +23,16 @@ class ListItem extends StatelessWidget {
       ),
       child: Row(
         children: <Widget>[
-          Expanded(
-            flex: 2,
-            child: Container(
+         
+             Container(
              padding: EdgeInsets.all(16),
               height: 300,
+              width: 205,
               child: Center(
                 child: Text(
+                   overflow: TextOverflow.ellipsis, // Укажите значение ellipsis, чтобы обозначить обрезанный текст
+  maxLines: 4, // Максимальное количество строк
+  softWrap: true, // Перенос текста по словам
                   item.title,
                   style: const TextStyle(
                     color: Color(0xFF0D1320),
@@ -41,24 +44,23 @@ class ListItem extends StatelessWidget {
                 ),
               ),
             ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              width: 130,
+          
+         
+            Container(
+              width: 107,
               height: 300,
               decoration: const ShapeDecoration(
                 color: Color(0xFFEAECF0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(150),
-                    bottomLeft: Radius.circular(150),
+                       topLeft: Radius.elliptical(100, 200),
+                  bottomLeft: Radius.elliptical(100, 200),
                   ),
                 ),
               ),
               child: Center(child: SvgPicture.asset(item.imgUrl)),
             ),
-          )
+    
         ],
       ),
     );

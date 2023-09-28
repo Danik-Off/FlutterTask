@@ -14,7 +14,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     );
     //Переменные для разных состояний
     final bool islogin = true;
-    final bool haveNotification = false;
+    final bool haveNotification = true;
     final bool haveNewNotification = false;
     final bool haveQuestion = false;
 
@@ -104,7 +104,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Positioned(
                   top: 0, // Вертикальное расположение в пикселях сверху
                   right: 0, // Горизонтальное расположение в пикселях слева
-                  child:haveNotification
+                  child:haveNewNotification
                       ? SvgPicture.asset("assets/icons/Count_Badge.svg")
                       : Container(),
                 ),
