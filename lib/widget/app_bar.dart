@@ -15,8 +15,8 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     //Переменные для разных состояний
     final bool islogin = true;
     final bool haveNotification = true;
-    final bool haveNewNotification = false;
-    final bool haveQuestion = false;
+    final bool haveNewNotification = false;//уведомления
+    final bool haveQuestion = false;//уведомления
 
     final String name = "Константин";
 
