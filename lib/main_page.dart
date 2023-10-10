@@ -7,13 +7,19 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<ListItemObj> items =[
-      ListItemObj("Осуществление индивидуальной предпринимательской деятельности", "assets/Coin.svg"),
-      ListItemObj("Осуществление индивидуальной предпринимательской деятельности", "assets/Coin.svg"),
-      ListItemObj("Осуществление индивидуальной предпринимательской деятельности", "assets/Coin.svg"),
-      ListItemObj("Осуществление индивидуальной предпринимательской деятельности", "assets/Coin.svg"),
-      ];
-  
+    final List<ListItemObj> items = [
+      ListItemObj(
+          "Осуществление индивидуальной предпринимательской деятельности",
+          "assets/Coin.svg"),
+      ListItemObj("Ведение личного подсобного хозяйства", "assets/Houses.svg"),
+      ListItemObj(
+          "Осуществление индивидуальной предпринимательской деятельности",
+          "assets/Coin.svg"),
+      ListItemObj(
+          "Осуществление индивидуальной предпринимательской деятельности",
+          "assets/Coin.svg"),
+    ];
+
     return Scaffold(
       appBar: const MyAppBar(),
       body: Center(
@@ -21,7 +27,6 @@ class MainPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-      
               'Витрина направлений',
               style: TextStyle(
                 color: Color(0xFF272727),
@@ -29,12 +34,9 @@ class MainPage extends StatelessWidget {
                 fontFamily: 'Inter',
                 fontWeight: FontWeight.w600,
                 height: 0.05,
-                
-              
               ),
             ),
-            for(var item in items)
-              ListItem(item)
+            for (var item in items) ListItem(item)
           ],
         ),
       ),
